@@ -19,6 +19,7 @@ export class TableComponent implements OnInit {
   companySearch: string = '';
 
   constructor(private http: HttpClient) {}
+
   ngOnInit(): void {
     this.getData();
   }
@@ -27,8 +28,9 @@ export class TableComponent implements OnInit {
     this.http
       .get<IUser[]>('https://jsonplaceholder.typicode.com/users')
       .subscribe((data) => {
-        console.log(data);
+      
         this.users = data;
       });
   }
+
 }

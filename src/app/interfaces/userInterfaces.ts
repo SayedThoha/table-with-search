@@ -9,7 +9,7 @@ export interface IUser {
   company: Company;
 }
 
- interface Address {
+interface Address {
   street: string;
   suite: string;
   city: string;
