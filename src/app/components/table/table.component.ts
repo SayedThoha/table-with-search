@@ -7,7 +7,7 @@ import { FilterPipePipe } from '../../pipes/filter-pipe.pipe';
 
 @Component({
   selector: 'app-table',
-  imports: [CommonModule, FormsModule,FilterPipePipe],
+  imports: [CommonModule, FormsModule, FilterPipePipe],
   templateUrl: './table.component.html',
   styleUrl: './table.component.css',
 })
@@ -28,9 +28,7 @@ export class TableComponent implements OnInit {
     this.http
       .get<IUser[]>('https://jsonplaceholder.typicode.com/users')
       .subscribe((data) => {
-      
         this.users = data;
       });
   }
-
 }
