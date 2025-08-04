@@ -4,10 +4,11 @@ import { IUser } from '../../interfaces/userInterfaces';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { FilterPipePipe } from '../../pipes/filter-pipe.pipe';
+import { SearchComponent } from '../search/search.component';
 
 @Component({
   selector: 'app-table',
-  imports: [CommonModule, FormsModule, FilterPipePipe],
+  imports: [CommonModule, FormsModule, FilterPipePipe, SearchComponent],
   templateUrl: './table.component.html',
   styleUrl: './table.component.css',
 })

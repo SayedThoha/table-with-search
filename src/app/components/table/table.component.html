@@ -6,17 +6,21 @@
 
     <tr>
       <td>
-        <input type="text" [(ngModel)]="nameSearch" placeholder="enter name" />
+        <!-- <input type="text" [(ngModel)]="nameSearch" placeholder="enter name" /> -->
+        <app-search (emitSearchText)="nameSearch = $event"></app-search>
       </td>
       <td>
-        <input type="text" [(ngModel)]="citySearch" placeholder="enter city" />
+        <!-- <input type="text" [(ngModel)]="citySearch" placeholder="enter city" /> -->
+        <app-search (emitSearchText)="citySearch = $event"></app-search>
       </td>
       <td>
-        <input
+        <!-- <input
           type="text"
           [(ngModel)]="companySearch"
           placeholder="enter company"
-        />
+        /> -->
+
+        <app-search (emitSearchText)="companySearch = $event"></app-search>
       </td>
     </tr>
   </thead>
