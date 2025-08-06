@@ -9,5 +9,5 @@ import { TableComponent } from './components/table/table.component';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'TableWithSearch';
+  title = 'Table With Search';
 }

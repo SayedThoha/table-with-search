@@ -9,6 +9,7 @@ export interface IUser {
   company: Company;
 }
 
+
 interface Address {
   street: string;
   suite: string;
@@ -17,10 +18,12 @@ interface Address {
   geo: Geo;
 }
 
+
 interface Geo {
   lat: string;
   lng: string;
 }
+
 
 interface Company {
   name: string;
